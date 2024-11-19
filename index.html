@@ -1,9 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- HEAD -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/sg-logo.svg" type="image/x-icon" />
+
+    <!-- CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/grid.css" rel="stylesheet" type="text/css" />
+    <!-- Grid Link -->
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <!-- Main CSS file Link -->
+
     <title>SynthArtistry - Earbuds</title>
+    <!-- Document Title -->
   </head>
-  <body></body>
+
+  <!-- BODY -->
+  <body>
+    <h1 class="hidden">Earbuds - SynthArtistry</h1>
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <h2 class="hidden">Header</h2>
+
+      <nav class="nav container grid-con">
+        <span></span>
+        <h3 class="hidden">Navigation Bar</h3>
+
+        <a href="index.html" target="_blank" class="nav__logo logo"
+          ><img
+            class="header-logo"
+            src="images/mylogo.svg"
+            alt="Earbuds Logo"
+          />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <h4 class="hidden">Navigation Menu</h4>
+          <ul class="nav__list">
+            <li>
+              <a href="#eb-gallery" class="nav__link"
+                ><h5 class="nav__link">THE GALLERY</h5></a
+              >
+            </li>
+            <li>
+              <a href="#selector" class="nav__link"
+                ><h5 class="nav__link">COLOR VARIATION</h5></a
+              >
+            </li>
+            <li>
+              <a href="#ar" class="nav__link"
+                ><h5 class="nav__link">EARBUD HOTSPOT</h5></a
+              >
+            </li>
+            <li>
+              <a href="#about" class="nav__link"
+                ><h5 class="nav__link">ABOUT US</h5></a
+              >
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <h5 class="hidden">Close Button</h5>
+            <i class="ri-menu-fold-3-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <h4 class="hidden">Burger Menu</h4>
+          <i class="ri-menu-unfold-fill"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <h2 class="hidden">Main Content</h2>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <h3 class="hidden">Hero Section</h3>
+
+        <div class="hero-img">
+          <h4 class="hidden">Mobile Hero</h4>
+          <img src="images/hero.jpg" alt="earbuds" />
+        </div>
+      </section>
+      <div class="col-span-full">
+        <canvas id="explode-view"></canvas>
+      </div>
+
+      <!-- Earbuds Gallery Section -->
+      <section class="gallery-sec grid-con" id="eb-gallery">
+        <h3 class="hidden">Earbuds Images</h3>
+
+        <div class="col-span-full">
+          <h4 class="section__etitle">
+            Level Up Your Game: <span class="about-h4">Discover</span> the
+            Perfect Sound <br />
+            <span class="eSubtitle">Where Sound Meets Soul</span>
+          </h4>
+        </div>
+
+        <div class="gallery-hero col-span-full m-col-start-1 m-col-end-6">
+          <h5 class="hidden">Program Gallery</h5>
+        </div>
+
+        <div class="gallery-info col-span-full m-col-start-6 m-col-end-14">
+          <h5 class="hidden">Program Information</h5>
+          <p>
+            Experience gaming like never before with our high-performance
+            earbuds designed for gamers.
+          </p>
+          <br />
+          <p>
+            Whether you're battling opponents or exploring new worlds, our
+            earbuds deliver unbeatable audio precision and noise isolation.
+          </p>
+          <br />
+          <p>
+            Designed for crystal-clear audio, deep bass, and a comfortable fit,
+            these earbuds are perfect for music, calls, and everyday use. Enjoy
+            immersive sound quality and seamless connectivity wherever you go,
+            elevating your listening experience to the next level.
+          </p>
+          <br />
+
+          <a href="#selector" class="button">
+            <div class="gallery-button">
+              <h6>CHECK MORE COLOR</h6>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="gallery-image col-span-full m-col-start-1 m-col-end-8 l-col-start-1 l-col-end-4 gallery-img1"
+        >
+          <img src="./images/idp-6.jpg" alt="IDP3 Program Picture" />
+        </div>
+
+        <div
+          class="gallery-image col-span-full m-col-start-8 m-col-end-13 l-col-start-4 l-col-end-9 gallery-img2"
+        >
+          <img src="./images/idp-4.jpg" alt="IDP3 Program Picture" />
+        </div>
+
+        <div
+          class="gallery-image col-span-full m-col-start-1 m-col-end-6 l-col-start-9 l-col-end-13 gallery-img3"
+        >
+          <img src="./images/idp-3.jpg" alt="IDP3 Program Picture" />
+        </div>
+
+        <div
+          class="gallery-image desktop-image col-span-full m-col-start-6 m-col-end-13 l-col-start-1 l-col-end-4 gallery-img4"
+        >
+          <img src="./images/idp-2.jpg" alt="IDP3 Program Picture" />
+        </div>
+
+        <div
+          class="gallery-image desktop-image col-span-full m-col-start-1 m-col-end-8 l-col-start-4 l-col-end-8 gallery-img5"
+        >
+          <img src="./images/idp-7.jpg" alt="IDP3 Program Picture" />
+        </div>
+
+        <div
+          class="gallery-image desktop-image col-span-full m-col-start-8 m-col-en-13 l-col-start-8 l-col-end-13 gallery-img6"
+        >
+          <img src="./images/idp-5.jpg" alt="IDP3 Program Picture" />
+        </div>
+      </section>
+
+      <!-- Color Selector section -->
+      <section class="selector-sec grid-con" id="selector">
+        <h3 class="hidden">Color Selector section</h3>
+        <div class="col-span-full">
+          <h4 class="section__etitle">
+            Color Variation <br />
+            <span class="eSubtitle">Select your preferred color</span>
+          </h4>
+        </div>
+        <br />
+        <div class="col-span-full">
+          <section
+            class="col-span-full m-col-start-3 m-col-end-11 l-col-start-4 l-col-end-10"
+            id="buds-con"
+          >
+            <section id="color-con">
+              <button id="green"></button>
+              <button id="red"></button>
+              <button id="yellow"></button>
+              <button id="white"></button>
+            </section>
+            <img src="images/green.jpg" id="ear-buds" />
+          </section>
+        </div>
+      </section>
+
+      <!-- Hotspot section -->
+      <section class="earbuds_con-sec grid-con" id="ar">
+        <h3 class="hidden">Hotspot section</h3>
+        <div class="col-span-full title-con">
+          <h4 class="section__etitle">
+            Hotspot AR <br />
+            <span class="eSubtitle">Hover the hotspots to see details</span>
+          </h4>
+        </div>
+        <div class="col-span-full">
+          <model-viewer
+            id="model"
+            src="model/earbuds-ar.gltf"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            tone-mapping="aces"
+            poster="images/poster.webp"
+            shadow-intensity="0.89"
+            shadow-softness="1"
+            exposure="0.86"
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-1"
+              data-position="-2.764257574760214m 0.9707159853122245m -0.15986850389742857m"
+              data-normal="-0.41745762081202403m -0.26241621806119847m -0.8699809557251365m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation" id="hotspot-1"></div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-2"
+              data-position="-2.646602490265493m 0.877444614784656m -0.24654080470614134m"
+              data-normal="0.7518980089045002m -0.6375443597233766m -0.1678885749250326m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation" id="hotspot-2"></div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-3"
+              data-position="-2.430369658035731m 0.30471365889538404m 0.08564078632318572m"
+              data-normal="-0.001596227435335722m 0.007387797761936529m -0.9999714358431462m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation" id="hotspot-3"></div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-4"
+              data-position="-2.419607395878385m 0.08804497247043758m 0.08550938139229708m"
+              data-normal="-1.691409959579644e-8m -1.2830133005619343e-8m -0.9999999999999998m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation" id="hotspot-4"></div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-5"
+              data-position="-2.4433372771197197m 0.26525710838599015m 0.15800363000582235m"
+              data-normal="0.03978092059026761m -0.03347324511605298m 0.9986475956103794m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation" id="hotspot-5"></div></button
+            ><button
+              class="Hotspot"
+              slot="hotspot-6"
+              data-position="-2.618556017681538m 1.034452324389439m 0.1907643182943838m"
+              data-normal="0.015167235538937993m -0.04710121567965118m 0.9987749648682658m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation" id="hotspot-6"></div>
+            </button>
+          </model-viewer>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="about-sec grid-con" id="about">
+        <h3 class="hidden">About the earbuds</h3>
+        <div class="col-span-full">
+          <h4 class="section__atitle">
+            The <span class="about-h4">SynthArtistry</span> Earbuds <br />
+            <span class="cSubtitle">2024-2025 MODEL VERSION</span>
+          </h4>
+        </div>
+        <div
+          class="col-span-full m-col-start-1 m-col-end-7 about-text abouttext1"
+        >
+          <p>
+            A cutting-edge concept designed for gamers and audiophiles who crave
+            both style and superior sound. Inspired by the dynamic world of
+            electronic music, these earbuds combine high-fidelity audio with a
+            sleek, futuristic aesthetic. The design features a mirrored,
+            kaleidoscope effect that visually captures the pulse of your
+            favorite tracks while enhancing the immersive experience of gaming.
+          </p>
+        </div>
+        <div
+          class="col-span-full m-col-start-8 m-col-end-14 about-text abouttext2"
+        >
+          <p>
+            SynthArtistry Earbuds aren't just about listening—they're about
+            feeling the beat, diving deep into the sound, and amplifying your
+            connection to every game, beat drop, and melody.
+          </p>
+        </div>
+      </section>
+
+      <!-- X-Ray slider -->
+      <section class="slider-sec grid-con" id="x-ray">
+        <h3 class="hidden">x-ray section</h3>
+
+        <div class="col-span-full">
+          <h4 class="section__etitle">
+            X-Ray Feature <br />
+            <span class="eSubtitle">See what's inside</span>
+          </h4>
+        </div>
+        <br />
+        <div class="col-span-full">
+          <section id="mobile-tablet-view">
+            <img src="images/sg-er-x-ray.jpg" alt="x-ray view" />
+            <img src="images/sg-er.jpg" alt="textured view" />
+          </section>
+          <div id="comparison-con">
+            <div id="xray">
+              <div id="divisor"></div>
+            </div>
+            <input id="slider" type="range" min="0" max="100" value="50" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer grid-con">
+        <h3 class="hidden">Footer</h3>
+
+        <div class="footer-main">
+          <h4 class="section__etitle">Enquire Now</h4>
+          <br />
+          <div class="col-span-3 footer-text">
+            <div class="contact__content">
+              <form action="" class="contact__form">
+                <div class="input__container i-user">
+                  <input type="text" class="input" />
+                  <label for="">Username</label>
+                  <span>Username</span>
+                </div>
+                <div class="input__container i-email">
+                  <input type="email" class="input" />
+                  <label for="">Email</label>
+                  <span>Email</span>
+                </div>
+                <div class="input__container i-phone">
+                  <input type="tel" class="input" />
+                  <label for="">Phone</label>
+                  <span>Phone</span>
+                </div>
+                <div class="input__container textarea">
+                  <textarea name="" id="" class="input"></textarea>
+                  <label for="">Message</label>
+                  <span>Message</span>
+                </div>
+                <button type="submit" class="button-c i-btn">
+                  <i class="uil uil-navigator button__icon"></i>
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-con">
+          <div class="footer-social">
+            <a href="https://www.facebook.com/FanshaweCollege" target="_blank"
+              ><i class="social-icon ri-facebook-fill"></i
+            ></a>
+            <a href="https://instagram.com/fanshawecollege/" target="_blank"
+              ><i class="social-icon ri-instagram-fill"></i
+            ></a>
+            <a href="https://www.youtube.com/user/MyFanshawe" target="_blank"
+              ><i class="social-icon ri-youtube-fill"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Back to Top Button -->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!-- Script Links -->
+      <script
+        type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+      <script src="js/main.js"></script>
+    </main>
+  </body>
 </html>

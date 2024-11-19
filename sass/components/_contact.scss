@@ -1,0 +1,129 @@
+@use "../abstracts/variables" as a;
+
+.input__container {
+  position: relative;
+  margin-top: 0.1rem;
+  margin-bottom: 1.9rem;
+}
+
+.input {
+  width: 100%;
+  border: 2px solid a.$primary-red;
+  background-color: transparent;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  outline: none;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 140px;
+  border-radius: 0.5rem;
+  resize: none;
+}
+
+.input__container label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: #d6d6dc;
+  font-size: 1rem;
+  font-weight: 500;
+  pointer-events: none;
+  z-index: 15;
+  transition: 0.5s;
+}
+
+.input__container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
+}
+
+.input__container span {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  color: transparent;
+  transform: translateY(-50%);
+  font-size: 0.875rem;
+  padding: 0 0.4rem;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.input__container span::before,
+.input__container span::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 5px;
+  opacity: 0;
+  background-color: #0a0a0f;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.input__container span::before {
+  left: 50%;
+}
+
+.input__container span::after {
+  right: 50%;
+}
+
+.input__container.focus label {
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 0.813rem;
+}
+
+.input__container.focus span::before,
+.input__container.focus span::after {
+  width: 50%;
+  opacity: 1;
+}
+
+.button-c {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: a.$primary-red;
+  color: white;
+  padding: 0.75rem 1.4rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+
+.button-c::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #343a40;
+  z-index: -1;
+  transform-origin: center;
+  transform: scale(0);
+  border-radius: 0.25rem;
+  transition: 0.3s;
+}
+
+.button-c:hover::after {
+  transform: scale(1);
+}
+
+.button__icon {
+  font-size: 1.25rem;
+}

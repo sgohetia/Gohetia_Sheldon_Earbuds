@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as a;
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.selector-sec {
+  padding-top: 125px;
+  padding-bottom: 25px;
+}
+.slider-sec {
+  padding-top: 125px;
+  padding-bottom: 25px;
+}
+.earbuds_con-sec {
+  padding-top: 125px;
+  padding-bottom: 25px;
+}

@@ -1,0 +1,45 @@
+// Variables
+
+//  Stores SASS variables like colors, font sizes, spacing, and other values that are likely to be reused.
+
+@use "fonts";
+
+// Colors
+$primary-red: #17b045;
+$secondary-red: #0a0a0f;
+$cool-gray: #3b3a4a;
+$light-gray: #c5c5c5;
+$mild-gray: #a0a0a0;
+$dark-gray: #16161d;
+$white: #ffffff;
+$scrollbar: #0ad647;
+$scroll-thumb: #3b3a4a;
+$box-shadow: #12eb53;
+
+// Typography
+$first-font: "Poppins", sans-serif;
+$second-font: "Montserrat", sans-serif;
+$biggest-font-size: 3.5rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1rem;
+$normal-font-size: 0.938rem;
+$paragraph-font-size: 0.813rem;
+$small-font-size: 0.75rem;
+
+// Font Weights
+$font-regular: 400;
+$font-semi-bold: 600;
+$font-light: 100;
+$font-bold: 800;
+
+// Z-Index
+$z-tooltip: 10;
+$z-fixed: 100;
+
+// Drop Shadow
+$light-shadow: 0 5px 10px rgba(0, 0, 0, 0.275);
+$dark-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+// Transitions
+$basic-transition: all 0.25s ease-in-out;

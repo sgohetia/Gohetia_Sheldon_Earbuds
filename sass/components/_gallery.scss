@@ -1,0 +1,73 @@
+@use "../abstracts/variables" as a;
+
+.gallery-sec {
+  padding-top: 125px;
+  padding-bottom: 25px;
+}
+
+.gallery-hero {
+  overflow: hidden;
+  min-height: 300px;
+  margin-top: 50px;
+  background-image: url(../images/idp-1.jpg);
+  border-radius: 35px;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-button {
+  margin-top: 25px;
+  background-color: a.$primary-red;
+  box-shadow: a.$light-shadow;
+  font-family: a.$second-font;
+  font-size: a.$h3-font-size;
+  padding: 10px 0 10px 0;
+  font-weight: a.$font-semi-bold;
+  text-align: center;
+  transition: a.$basic-transition;
+  border-radius: 35px;
+  cursor: pointer;
+
+  h6 {
+    color: a.$white;
+    font-size: a.$h3-font-size;
+  }
+
+  &:hover {
+    background-color: a.$dark-gray;
+    transform: scale(1.05);
+
+    h6 {
+      color: a.$white;
+    }
+  }
+}
+
+.gallery-info {
+  margin-top: 50px;
+  margin-bottom: 25px;
+
+  p {
+    font-family: a.$first-font;
+    font-size: a.$normal-font-size;
+    color: white;
+    font-weight: a.$font-light;
+  }
+}
+
+.gallery-image {
+  overflow: hidden;
+  margin-top: 25px;
+  border-radius: 35px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+  }
+}
+
+.desktop-image {
+  display: none;
+}

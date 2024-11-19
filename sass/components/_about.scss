@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as a;
+
+.about-sec {
+  background-color: a.$secondary-red;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.about-text {
+  font-family: a.$first-font;
+  font-size: a.$normal-font-size;
+  color: a.$white;
+  font-weight: a.$font-light;
+  margin-top: 25px;
+}
+.about-h4 {
+  color: a.$scrollbar;
+}
