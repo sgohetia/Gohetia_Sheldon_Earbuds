@@ -1,0 +1,97 @@
+@use "../abstracts/variables" as a;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid; */
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: a.$secondary-red;
+  overflow-x: hidden;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+// Styles
+
+.section__etitle {
+  font-size: a.$h1-font-size;
+  color: white;
+  font-family: a.$second-font;
+  text-transform: uppercase;
+  font-weight: a.$font-bold;
+  line-height: 40px;
+}
+
+.eSubtitle {
+  font-size: a.$h3-font-size;
+  color: #0ad647;
+  font-weight: a.$font-light;
+  padding-top: 50px;
+  opacity: 0.9;
+}
+
+.section__atitle {
+  font-size: a.$h1-font-size;
+  color: a.$white;
+  font-family: a.$second-font;
+  text-transform: uppercase;
+  font-weight: a.$font-bold;
+  line-height: 40px;
+}
+
+.cSubtitle {
+  font-size: a.$h3-font-size;
+  color: #0ad647;
+  font-weight: a.$font-light;
+  padding-top: 50px;
+  opacity: 0.9;
+}
+
+.scrollup {
+  position: fixed;
+  right: 2.5rem;
+  bottom: -50%;
+  background-color: a.$scrollbar;
+  color: a.$white;
+  box-shadow: a.$light-shadow;
+  display: inline-flex;
+  padding: 6px;
+  font-size: a.$h2-font-size;
+  border-radius: 0.25rem;
+  z-index: 150;
+  transition: bottom 0.4s, transform 0.4s;
+}
+
+.scrollup:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* Show Scroll Up */
+.show-scroll {
+  bottom: 3rem;
+}

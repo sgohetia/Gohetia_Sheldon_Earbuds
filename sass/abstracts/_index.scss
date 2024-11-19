@@ -1,0 +1,6 @@
+// Index
+
+// Index forward all partials, so they can be used in one file e.g. abstracts. Acts as an entry point for all abstracts files, where you import all files within the folder.
+
+@forward "variables";
+@forward "fonts";

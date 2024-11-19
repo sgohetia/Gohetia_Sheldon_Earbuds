@@ -1,0 +1,35 @@
+#green,
+#red,
+#yellow,
+#white {
+  border: 1px solid #12eb53;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  transition: transform 0.3s ease;
+}
+
+#green:hover,
+#red:hover,
+#yellow:hover,
+#white:hover {
+  transform: rotate(45deg) scale(1.5);
+}
+
+#green {
+  background-color: green;
+}
+#red {
+  background-color: red;
+}
+#yellow {
+  background-color: yellow;
+}
+#white {
+  background-color: white;
+}

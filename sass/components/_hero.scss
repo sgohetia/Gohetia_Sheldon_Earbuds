@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as a;
+#explode-view {
+  max-width: 100%;
+  /* width: 100vw; */
+}
+// Scroll bar
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: a.$scrollbar;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: a.$scroll-thumb;
+  border-radius: 0.5rem;
+}

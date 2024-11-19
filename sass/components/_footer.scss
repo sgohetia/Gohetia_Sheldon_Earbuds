@@ -1,0 +1,98 @@
+@use "../abstracts/variables" as a;
+
+.footer {
+  background-color: a.$secondary-red;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 200px;
+    margin-left: -20px;
+    margin-bottom: 30px;
+    transition: a.$basic-transition;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.footer-main {
+  margin-bottom: 50px;
+}
+
+.footer-text {
+  font-family: a.$second-font;
+  font-size: a.$normal-font-size;
+  font-weight: a.$font-light;
+  color: a.$white;
+  margin-bottom: 15px;
+}
+
+.footer_links {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.footer-link {
+  font-family: a.$second-font;
+  font-size: a.$normal-font-size;
+  font-weight: lighter;
+  color: a.$white;
+  margin-bottom: 10px;
+  transition: a.$basic-transition;
+
+  &:hover {
+    transform: scale(1.05);
+    text-shadow: a.$dark-shadow;
+    margin-left: 10px;
+  }
+}
+
+.footer-buttons {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-button {
+  background-color: a.$white;
+  padding: 10px;
+  color: a.$primary-red;
+  font-family: a.$second-font;
+  font-size: a.$normal-font-size;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: a.$basic-transition;
+  text-align: center;
+  border-radius: 15px;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: a.$dark-shadow;
+  }
+}
+
+.footer-con {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid a.$primary-red;
+  width: fit-content;
+}
+
+.social-icon {
+  color: a.$white;
+  min-width: 25px;
+}
