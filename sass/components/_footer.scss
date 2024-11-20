@@ -6,17 +6,6 @@
   padding-bottom: 150px;
   display: flex;
   flex-direction: column;
-
-  img {
-    width: 200px;
-    margin-left: -20px;
-    margin-bottom: 30px;
-    transition: a.$basic-transition;
-
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
 }
 
 .footer-main {
@@ -30,53 +19,12 @@
   color: a.$white;
   margin-bottom: 15px;
 }
-
-.footer_links {
-  margin-top: 25px;
-  display: flex;
-  gap: 15px;
-  flex-direction: column;
-}
-
-.footer-link {
+.footer-text2 {
   font-family: a.$second-font;
-  font-size: a.$normal-font-size;
-  font-weight: lighter;
+  font-size: 1.2rem;
+  font-weight: a.$font-light;
   color: a.$white;
-  margin-bottom: 10px;
-  transition: a.$basic-transition;
-
-  &:hover {
-    transform: scale(1.05);
-    text-shadow: a.$dark-shadow;
-    margin-left: 10px;
-  }
-}
-
-.footer-buttons {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.footer-button {
-  background-color: a.$white;
-  padding: 10px;
-  color: a.$primary-red;
-  font-family: a.$second-font;
-  font-size: a.$normal-font-size;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: a.$basic-transition;
-  text-align: center;
-  border-radius: 15px;
-
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: a.$dark-shadow;
-  }
+  margin-top: 610px;
 }
 
 .footer-con {

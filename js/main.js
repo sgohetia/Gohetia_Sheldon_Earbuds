@@ -362,15 +362,4 @@
   navLinks.forEach((link) => {
     link.addEventListener("click", scrollLink);
   });
-
-  gsap.to("#box3", 3, {
-    scrollTrigger: {
-      trigger: "#box3",
-      toggleActions: "restart pause reverse none",
-      start: "top center",
-      end: "bottom center",
-    },
-    x: 300,
-    ease: Bounce.easeOut,
-  });
 })();
