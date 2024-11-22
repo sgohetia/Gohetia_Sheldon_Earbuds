@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as a;
 
 .footer {
-  background-color: a.$secondary-red;
+  background-color: a.$secondary-color;
   padding-top: 100px;
   padding-bottom: 150px;
   display: flex;
@@ -36,7 +36,7 @@
   display: flex;
   gap: 10px;
   padding-bottom: 10px;
-  border-bottom: 2px solid a.$primary-red;
+  border-bottom: 2px solid a.$primary-color;
   width: fit-content;
 }
 

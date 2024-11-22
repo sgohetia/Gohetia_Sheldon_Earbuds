@@ -259,8 +259,8 @@
         const imgElement = document.createElement("img");
         imgElement.src = infobox.image;
         imgElement.alt = infobox.title;
-        imgElement.style.width = "260px";
-        imgElement.style.height = "auto";
+        // imgElement.style.width = "260px";
+        // imgElement.style.height = "auto";
         annotation.appendChild(imgElement);
 
         const titleElement = document.createElement("h2");
